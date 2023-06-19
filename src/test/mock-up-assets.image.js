@@ -1,0 +1,1 @@
+export default "this is mockup image file in assets folder" 
