@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useState ,useEffect } from 'react'
 import reactLogo from '@assets/react.svg'
 import viteLogo from '@assets/vite.svg'
-import './DefaultPage.style.css'
+import './TestWithUseEffect.style.css'
 
-function DefaultPage() {
+function TestWithUseEffect() {
   const [count, setCount] = useState(0)
-
+    useEffect(()=>{
+        setCount(1)
+    },[])
   return (
     <>
       <div>
@@ -16,7 +18,7 @@ function DefaultPage() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite + UseEffectTest</h1>
       <div className="card">
         <button  onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -32,4 +34,4 @@ function DefaultPage() {
   )
 }
 
-export default DefaultPage
+export default TestWithUseEffect
