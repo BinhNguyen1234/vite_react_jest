@@ -6,7 +6,7 @@ import './TestWithUseEffect.style.css'
 function TestWithUseEffect() {
   const [count, setCount] = useState(0)
     useEffect(()=>{
-        setCount(1)
+        setTimeout(()=>{setCount(1)},5000)
     },[])
   return (
     <>
