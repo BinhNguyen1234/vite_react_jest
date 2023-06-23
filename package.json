@@ -13,11 +13,13 @@
   "dependencies": {
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@vitejs/plugin-vue": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
-    "ts-jest": "^29.1.0"
+    "ts-jest": "^29.1.0",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",

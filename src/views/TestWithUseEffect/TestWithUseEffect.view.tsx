@@ -2,6 +2,7 @@ import { useState ,useEffect } from 'react'
 import reactLogo from '@assets/react.svg'
 import viteLogo from '@assets/vite.svg'
 import './TestWithUseEffect.style.css'
+import { Link } from 'react-router-dom'
 
 function TestWithUseEffect() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,9 @@ function TestWithUseEffect() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+      </p>
+      <p>
+      <Link to={"/"}> to TestWithUseEffect</Link>
       </p>
     </>
   )

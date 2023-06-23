@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { RouterProvider} from "react-router-dom"
-import router from './views/index.tsx'
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <RouterProvider  router={router}/>
-  </React.StrictMode>,
-)
+
+function Appp() {
+ 
+
+  return (
+    <>
+        <div id="root1"></div>
+        <div id="root2"></div>
+        <script type="module" src="/src/main-1.tsx"></script>
+        <script type="module" src="/src/main-2.tsx"></script>
+    </>
+  );
+}
+
+export default Appp;

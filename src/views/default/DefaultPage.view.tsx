@@ -2,7 +2,9 @@ import { useState } from "react";
 import reactLogo from "@assets/react.svg";
 import viteLogo from "@assets/vite.svg";
 import "./DefaultPage.style.css";
-
+import { Link } from "react-router-dom";
+import js from "../../test/main.ts"
+import vue from "../../test/abc.vue"
 function DefaultPage() {
   const [count, setCount] = useState(0);
 
@@ -24,10 +26,16 @@ function DefaultPage() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <div id="app1">`12`12`1</div>
+      <script type="module" src={vue}></script>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <p>
+        <Link to={"TestWithUseEffect"}> to TestWithUseEffect</Link>
+      </p>
+     
     </>
   );
 }
