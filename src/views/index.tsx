@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import DefaultPage from "./default/DefaultPage.view.jsx";
-import TestWithUseEffect from "./TestWithUseEffect/TestWithUseEffect.view.js";
+import {lazy} from "react"
+const DefaultPage = lazy(()=> import("./default/DefaultPage.view.jsx"))
+const TestWithUseEffect = lazy(()=> import("./TestWithUseEffect/TestWithUseEffect.view.jsx"))
 const router = createBrowserRouter([
     {
       path: "/",

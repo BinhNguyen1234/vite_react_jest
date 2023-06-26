@@ -1,13 +1,16 @@
-import { useState ,useEffect } from 'react'
+import { useState ,useEffect, lazy, Suspense } from 'react'
 import reactLogo from '@assets/react.svg'
 import viteLogo from '@assets/vite.svg'
 import './TestWithUseEffect.style.css'
-
+import { Link } from 'react-router-dom'
+// let InstrucionClick = lazy(()=> import('../../components/instruction/ClickInstruction.component.tsx'))
 function TestWithUseEffect() {
   const [count, setCount] = useState(0)
     useEffect(()=>{
         setCount(1)
+    
     },[])
+    let InstrucionClick = lazy(()=> import('../../components/instruction/ClickInstruction.component.tsx'))
   return (
     <>
     {console.log(count)}
@@ -28,9 +31,12 @@ function TestWithUseEffect() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Link to="/">
+        Click to change route
+      </Link>
+      <Suspense  fallback={<div>Loading...</div>}>
+      <InstrucionClick/>
+      </Suspense>
     </>
   )
 }

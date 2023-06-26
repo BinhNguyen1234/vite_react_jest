@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "@assets/react.svg";
 import viteLogo from "@assets/vite.svg";
 import "./DefaultPage.style.css";
+import { Link } from "react-router-dom";
 
 function DefaultPage() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,9 @@ function DefaultPage() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <Link to="/TestWithUseEffect">
+        Click to change route
+      </Link>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
