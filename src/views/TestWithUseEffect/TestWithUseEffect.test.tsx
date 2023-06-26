@@ -11,6 +11,7 @@ describe("test TestWithUseEffect component", () => {
         let component = render(<TestWithUseEffect />);
  
         let button = component.getByRole("button")
+
         component.debug()
         // You can use const {debug} = render(<DefaultPage/>); debug() instead
         // first render
