@@ -16,12 +16,17 @@ Explain why i added specificied package:
     │
     ├──"assets": store media file
     │
-    ├──"views":
+    ├──"views" or "pages" or "screens": combination component for render base on browser url
     │   └──{path browser name}:
     ├──"store"
     │   └──{event name}
     │       ├──{event name".reducer.ts"}
     │       ├──{event name".action.ts"}
     │       └──{event name".state.ts"}
-    ├──"ui": store all global UI components
-        └──
+    ├──"ui" or "commons" or "shared": store all global UI components
+    ├──"layouts": store your common layout
+    │
+    ├──"helpers" or "utils"
+    ├──"lib": for custom the third libary
+    │
+    └──"apis" or "service": define all api or service
