@@ -2,11 +2,12 @@
 import DefaultPage from "./DefaultPage.view.tsx";
 import { render, screen, getByText, prettyDOM} from "@testing-library/react";
 import  user  from "@testing-library/user-event"
+import { MemoryRouter } from "react-router-dom";
 // tests
 describe('test DefaultPage component',()=>{
     test('render default page', async ()=>{
         //setup
-        const component = render(<DefaultPage/>);
+        const component = render(<MemoryRouter><DefaultPage/></MemoryRouter>);
     
         // console.log(prettyDOM(component.baseElement)) // You can use const {debug} = render(<DefaultPage/>); debug() instead
     

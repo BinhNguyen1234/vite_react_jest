@@ -3,17 +3,15 @@ import reactLogo from '@assets/react.svg'
 import viteLogo from '@assets/vite.svg'
 import './TestWithUseEffect.style.css'
 import { Link } from 'react-router-dom'
-// let InstrucionClick = lazy(()=> import('../../components/instruction/ClickInstruction.component.tsx'))
+let InstrucionClick = lazy(()=> import('../../components/instruction/ClickInstruction.component.tsx'))
 function TestWithUseEffect() {
   const [count, setCount] = useState(0)
     useEffect(()=>{
         setCount(1)
     
     },[])
-    let InstrucionClick = lazy(()=> import('../../components/instruction/ClickInstruction.component.tsx'))
   return (
     <>
-    {console.log(count)}
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

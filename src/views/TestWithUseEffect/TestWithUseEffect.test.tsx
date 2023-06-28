@@ -1,6 +1,7 @@
 //init for testing
 import { act, render } from "@testing-library/react";
 import TestWithUseEffect from "./TestWithUseEffect.view.tsx";
+import { MemoryRouter } from "react-router-dom";
 // tests
 describe("test TestWithUseEffect component", () => {
   
@@ -8,7 +9,7 @@ describe("test TestWithUseEffect component", () => {
         //setup
         act(() => { });
 
-        let component = render(<TestWithUseEffect />);
+        let component = render(<MemoryRouter><TestWithUseEffect /></MemoryRouter>);
  
         let button = component.getByRole("button")
 
